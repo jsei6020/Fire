@@ -1,0 +1,47 @@
+ion-content{
+    --background: none;
+    background-image: url('../../assets/backgrounds/Sky.jpg');
+    background-position: center center;
+    background-size: cover;
+    --offset-bottom:100px;
+}
+
+.row1{
+    height: 80%;
+}
+
+.row2{
+    height: 20%;
+}
+
+.row3{
+    height: 20%;
+}
+
+.height100{
+    height: 100%;
+}
+
+.story {
+    color: white;
+    outline: solid white thick;
+    //text-align: bottom;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.text{
+    --background: none;
+    color: white;
+}
+
+.output {
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    overflow-y: auto;
+}
+

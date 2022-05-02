@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Story</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="height100">
+    <ion-row class="row1">
+      <ion-col>
+        <div class="height100 story">
+            <div class="output" id="scrollMe" [scrollTop]="scrolll">
+              <ion-item *ngFor="let text of display" class="text" lines="none" [style.color]="text.color">
+                  {{text.name}} {{text.text}}
+              </ion-item>
+            </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col col-6 *ngFor="let option of options">
+        <ion-button fill="outline" expand="block" size="large" color="light" class="height100" (click)="press(option.nextC, option.nextEN, option.value)">
+          {{option.value}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
